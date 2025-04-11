@@ -86,10 +86,14 @@ file.
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #f8f9fa;
-        padding: 10px 0;
-        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        background-color: lightgray;
+        padding: 10px 20px;
+        box-shadow: 0 2px 5px rgba(145, 139, 139, 0.1);
         z-index: 1000;
-        text-align: center; /* Center the links */
+        text-align: left; /* Center the links */
       }
-    
+      body {
+        padding-top: 50px;
+      }
+
+      
