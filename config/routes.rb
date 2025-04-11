@@ -9,7 +9,6 @@ Rails.application.routes.draw do
   patch 'users/:id', to: 'users#update'
   
   
-  
   root to: 'static_page#home'
   get  'help', to:'static_page#help'
   get 'about',to:'static_page#about'
