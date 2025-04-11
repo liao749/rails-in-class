@@ -4,6 +4,7 @@ Add the stylesheet link tag below this comment to include the CSS in your view
 file.
 <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 */
+
 .mytable {
     width: 100%; /* Makes the table take full width */
     border-collapse: collapse; /* Ensures borders are collapsed */
@@ -79,4 +80,16 @@ file.
     border: 1px solid #ddd;
     border-radius: 5px;
     }
+
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f9fa;
+        padding: 10px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        text-align: center; /* Center the links */
+      }
     
