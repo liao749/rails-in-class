@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title)%></title>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+  </head>
+  <body>
+  <%= render'layouts/header' %>
+
+  <% flash.each do |message_type, message| %>
+      <div><%= message_type%> --> <%= message %></div>
+    <% end %>
+    
+    <%= yield %>
+  <%= render'layouts/footer' %>
+  </body>
+</html>

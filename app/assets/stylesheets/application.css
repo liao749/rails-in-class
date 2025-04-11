@@ -1,0 +1,82 @@
+
+/*
+Add the stylesheet link tag below this comment to include the CSS in your view
+file.
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+*/
+.mytable {
+    width: 100%; /* Makes the table take full width */
+    border-collapse: collapse; /* Ensures borders are collapsed */
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    }
+    .mytable th, .mytable td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+    }
+    .mytable th {
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    }
+    .mytable tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+    }
+    .mytable tbody tr:nth-child(odd) {
+    background-color: #fff;
+    }
+    .mytable tbody tr:hover {
+    background-color: #e6f7ff;
+    transition: background-color 0.3s;
+    }
+    .mytable tfoot td {
+    text-align: center; /* Centers text in the footer cells */
+    padding: 12px 15px;
+    border-top: 1px solid #ddd; /* Optional: Add a border to the top of the footer
+    */
+    }
+    
+
+    /* Styling for the container holding the user information */
+.user-info-container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    /* Styling for the heading */
+    .user-info-container h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    }
+    /* Styling for the paragraph and labels */
+    .user-info-container p {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #555;
+    margin: 10px 0;
+    }
+    .user-info-container p strong {
+    font-weight: bold;
+    color: #222;
+    }
+    /* Add some space between fields */
+    .user-info-container p + p {
+    margin-top: 15px;
+    }
+    /* Optional: Add a border and padding to the "password" field */
+    .user-info-container p:last-child {
+    padding: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    }
+    
