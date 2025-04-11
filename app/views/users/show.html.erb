@@ -1,4 +1,5 @@
 <% provide(:title,'User Information')%>
+
 <div class="user-info-container">
 <p> <strong>PK:</strong> <%= @user.id%></p>
 <p> <strong>Name:</strong> <%= @user.name%></p>
@@ -7,4 +8,38 @@
 <p> <strong>Password:</strong> ********</p>
 <p> <strong>Created:</strong> <%= @user.created_at%></p>
 <p> <strong>Updated:</strong> <%= @user.updated_at%></p>
+</div>
+
+<div class=user_post>
+    <table>
+        <thead>
+            <tr>
+                <th>Post ID</th>
+                <th>Post</th>
+                <th>Edit</th>
+                <th>Show</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if @posts.present? %>
+                <% @posts.each do |post| %>
+                <tr>
+                    <td><%= post.id %></td>
+                    <td><%= post.topics%></td>
+                    <td> <%= link_to 'Edit', edit_post_path(trip.id)%>
+                    <td> <%= link_to "Show this trip", post_path(post.id) %> </td>
+                    <td><%= button_to 'Delete', post_path(post.id), method: :delete%></td>
+                </tr>
+            <% end %>
+            <% else %>
+                <tr>
+                    <td colspan="3">No posts available</td>
+                </tr>
+            <% end %>
+        </tbody>
+        <tfoot>
+            <tr> <td colspan="4">End of Posts List</td> </tr>
+        </tfoot>
+    </table>
 </div>
