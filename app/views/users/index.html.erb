@@ -6,10 +6,9 @@
       <th>Name</th>
       <th>Email</th>
       <th>Phone</th>
-      <th>Created</th>
-      <th>Updated</th>
-      <th>...</th>
-      <th>...</th>
+      <th>Show</th>
+      <th>Edit</th>
+      <th>Delete</th>
     </tr>
   </thead>
   <tbody>
@@ -19,8 +18,7 @@
         <td><%= user.name%></td>
         <td><%= user.email%></td>
         <td><%= user.phone%></td>
-        <td><%= user.created_at%></td>
-        <td><%= user.updated_at%></td>
+        <td> <%= link_to 'Show', show_user_path(user.id)%> </td>
         <td> <%= link_to 'Edit', edit_user_path(user.id)%> </td>
         <td><%= button_to "Delete", user_path(user.id), method: :delete %> </td>
       <% end %>

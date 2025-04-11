@@ -1,5 +1,5 @@
 <% provide(:title,'User Information')%>
-
+<%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
 <div class="user-info-container">
 <p> <strong>PK:</strong> <%= @user.id%></p>
 <p> <strong>Name:</strong> <%= @user.name%></p>
@@ -10,8 +10,8 @@
 <p> <strong>Password:</strong> ********</p>
 </div>
 
-<div class=mytable>
-    <table>
+<div>
+    <table class=mytable>
         <thead>
             <tr>
                 <th>PK</th>
